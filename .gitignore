@@ -37,3 +37,6 @@ ENV/
 
 # Training Data
 *.png
+
+# Config Files that include secret things
+*config.py
