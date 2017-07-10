@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for cat_picture project
+# Scrapy settings for GoogleSearchScraper project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,16 +9,16 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'cat_picture'
+BOT_NAME = 'GoogleSearchScraper'
 
-SPIDER_MODULES = ['cat_picture.spiders']
-NEWSPIDER_MODULE = 'cat_picture.spiders'
+SPIDER_MODULES = ['GoogleSearchScraper.spiders']
+NEWSPIDER_MODULE = 'GoogleSearchScraper.spiders'
 
-LOG_LEVEL = 'INFO'
+LOG_LEVEL = 'WARNING'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'cat_picture (+http://www.yourdomain.com)'
+#USER_AGENT = 'GoogleSearchScraper (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -49,13 +49,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'cat_picture.middlewares.CatPictureSpiderMiddleware': 543,
+#    'GoogleSearchScraper.middlewares.GooglesearchscraperSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'cat_picture.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'GoogleSearchScraper.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -67,7 +67,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'cat_picture.pipelines.CatPicturePipeline': 300,
+#    'GoogleSearchScraper.pipelines.GooglesearchscraperPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
