@@ -6,6 +6,6 @@
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 
-class CatPicturePipeline(object):
+class GooglesearchscraperPipeline(object):
     def process_item(self, item, spider):
         return item

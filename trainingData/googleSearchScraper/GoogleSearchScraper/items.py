@@ -8,7 +8,7 @@
 import scrapy
 
 
-class CatPictureItem(scrapy.Item):
+class GooglesearchscraperItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass

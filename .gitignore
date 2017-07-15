@@ -21,6 +21,7 @@ wheels/
 .installed.cfg
 *.egg
 
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
@@ -37,6 +38,12 @@ ENV/
 
 # Training Data
 *.png
+*.jpg
+*.gif
+
+
+*.DS_STORE
+*.cfg
 
 # Config Files that include secret things
 *config.py
