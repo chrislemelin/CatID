@@ -45,5 +45,8 @@ ENV/
 *.DS_STORE
 *.cfg
 
+*.DS_STORE
+*.cfg
+
 # Config Files that include secret things
 *config.py
