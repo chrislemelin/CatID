@@ -17,7 +17,13 @@ OUTPUT_LABELS_DEFAULT= "output/labels.txt"
 Downloads (if necessary) and executes retrain.py.
 """
 def retrain(image_dir, output_graph, output_labels):
-    print(image_dir)
+    t
+    ry:
+        os.makedirs('output')
+    except OSError as e:
+        if e.errno != errno.EEXIST:
+            raise
+
     # Download retrain.py if needed
     if not os.path.isfile(RETRAIN_LOCAL):
         os.makedirs("common")

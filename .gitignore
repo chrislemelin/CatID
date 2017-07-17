@@ -41,6 +41,8 @@ ENV/
 *.jpg
 *.gif
 
+# Output graph
+*output*
 
 *.DS_STORE
 *.cfg
