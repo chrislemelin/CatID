@@ -10,18 +10,18 @@ class PictureSpider(scrapy.Spider):
     image_counter = 0
     breed_count = 0
 
-    def __init__(self,quantity = 60, breed='', *args, **kwargs):
+    def __init__(self,quantity = 60, out_path='', breed='', *args, **kwargs):
         super(PictureSpider, self).__init__(*args, **kwargs)
         self.quantity = int(quantity)
         self.breed = breed
-
         self.breeds = []
         self.start_urls = []
+        self.out_path = out_path
 
 
         self.start_urls.append('https://www.google.com/search?tbm=isch&q='+ breed.replace(" ","+")+'+cat')
         try:
-            os.makedirs('data/'+breed)
+            os.makedirs(out_path+'/'+breed)
         except OSError as e:
             if e.errno != errno.EEXIST:
                 raise
@@ -33,7 +33,7 @@ class PictureSpider(scrapy.Spider):
             for href in tr.css('img::attr(src)').extract():
                 #print(href)
                 try:
-                    f = open('data/'+self.breed+'/'+str(self.image_counter)+'.jpg','wb')
+                    f = open(self.out_path+'/'+self.breed+'/'+str(self.image_counter)+'.jpg','wb')
                     #f = open(str(self.image_counter)+'.png','wb')
 
                     f.write(requests.get(href.encode()).content)
