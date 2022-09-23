@@ -27,7 +27,7 @@ olefile==0.44
 parsel==1.2.0
 pbr==3.1.1
 Pillow==4.2.1
-protobuf==3.3.0
+protobuf==3.18.3
 pyasn1==0.2.3
 pyasn1-modules==0.0.9
 pycparser==2.18
