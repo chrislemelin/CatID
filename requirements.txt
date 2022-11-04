@@ -40,7 +40,7 @@ Scrapy==1.4.0
 service-identity==17.0.0
 six==1.10.0
 tensorflow==1.2.1
-Twisted==17.5.0
+Twisted==22.10.0
 uritemplate==3.0.0
 urllib3==1.21.1
 w3lib==1.17.0
